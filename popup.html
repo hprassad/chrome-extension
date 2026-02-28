@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Movies – Last 10 Days</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🎬 Tamil Movies</h1>
+      <p class="subtitle">Released in the last 10 days (from IMDb)</p>
+    </header>
+
+    <div id="loading" class="card loading">
+      <div class="spinner"></div>
+      <p>Loading from IMDb…</p>
+    </div>
+
+    <div id="error" class="card error hidden">
+      <p id="error-message"></p>
+      <a href="#" id="open-imdb-fallback" class="open-imdb-btn">Open search on IMDb</a>
+    </div>
+
+    <div id="open-imdb-bar" class="open-imdb-bar hidden">
+      <a href="#" id="open-imdb-link" target="_blank" rel="noopener">View full results on IMDb</a>
+    </div>
+
+    <div id="movies-list" class="movies-list hidden"></div>
+
+    <footer class="footer">
+      <p>Data from <a href="https://www.imdb.com" target="_blank" rel="noopener">IMDb</a></p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

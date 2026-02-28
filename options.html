@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Movies Extension – Options</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      max-width: 520px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    p { color: #555; margin: 0 0 16px; font-size: 0.95rem; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; font-size: 0.9rem; }
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    input:focus {
+      outline: none;
+      border-color: #e67e22;
+      box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+    }
+    button {
+      background: linear-gradient(135deg, #e67e22, #d35400);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { opacity: 0.95; }
+    .status {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      min-height: 1.4em;
+    }
+    .status.success { color: #27ae60; }
+    .status.error { color: #c0392b; }
+    a { color: #e67e22; }
+  </style>
+</head>
+<body>
+  <h1>Tamil Movies – Last 10 Days</h1>
+  <p>This extension uses The Movie Database (TMDB) to show Tamil movies released in the last 10 days. You need a free API key.</p>
+  <label for="api-key">TMDB API key</label>
+  <input type="password" id="api-key" placeholder="Paste your TMDB API key here" autocomplete="off">
+  <p style="margin-top: -8px; font-size: 0.85rem;">
+    Get a key at <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener">themoviedb.org/settings/api</a> (free account).
+  </p>
+  <button id="save">Save</button>
+  <div id="status" class="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
