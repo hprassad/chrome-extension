@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Tamil Movies – Last 10 Days",
+  "name": "Tamil New Releases – Last 10 Days",
   "version": "1.0.0",
   "description": "Recommends Tamil movies released in the last 10 days (from IMDb)",
   "permissions": [],
@@ -12,7 +12,7 @@
       "32": "icons/icon32.png",
       "48": "icons/icon48.png"
     },
-    "default_title": "Tamil Movies (Last 10 Days)"
+    "default_title": "Tamil New Releases (Last 10 Days)"
   },
   "icons": {
     "16": "icons/icon16.png",

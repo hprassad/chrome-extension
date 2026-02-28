@@ -1,4 +1,4 @@
-# Tamil Movies – Last 10 Days (Chrome Extension)
+# Tamil New Releases – Last 10 Days (Chrome Extension)
 
 A **Chrome plugin (extension)** to see **Tamil movies released in the last 10 days** (from **IMDb**).
 
