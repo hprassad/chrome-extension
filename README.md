@@ -1,11 +1,11 @@
 # Tamil Movies – Last 10 Days (Chrome Extension)
 
-A Chrome extension that recommends **Tamil movies** released in the **last 10 days**, using **IMDb** only.
+A **Chrome plugin (extension)** to see **Tamil movies released in the last 10 days** (from **IMDb**).
 
 ## How it works
 
-- Builds IMDb’s advanced search URL for **Tamil** (primary language) **feature films** with **release date** in the last 10 days.
-- Fetches that search page and parses the results so you can see titles, year, runtime, and rating in the popup.
+- Builds IMDb’s advanced search URL for **Tamil** (primary language) **feature films** released in the last 10 days.
+- Fetches that search page and parses the results so you can see titles, year, runtime, rating, director, and stars in the popup.
 - Each movie links to its **IMDb title page**.
 - A **“View full results on IMDb”** link opens the full search on IMDb in a new tab.
 
